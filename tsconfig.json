@@ -1,0 +1,56 @@
+// for TypeScript 6.0
+/*
+Default values:
+- https://github.com/microsoft/TypeScript/blob/release-6.0/src/compiler/commandLineParser.ts
+Useful references:
+- https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping
+To be overriden:
+- https://www.typescriptlang.org/tsconfig/#quick-nav-Top%20Level
+- https://www.typescriptlang.org/tsconfig/#JavaScript_Support_6247: allowJs, checkJs
+- https://www.typescriptlang.org/tsconfig/#Language_and_Environment_6254: jsx*, lib, target
+- https://www.typescriptlang.org/tsconfig/#Modules_6244
+- https://www.typescriptlang.org/tsconfig/#Emit_6246
+- https://www.typescriptlang.org/tsconfig/#Interop_Constraints_6252 (esModuleInterop)
+- https://www.typescriptlang.org/tsconfig/#Completeness_6257: skipLibCheck
+*/
+{
+	"compilerOptions": {
+		// https://www.typescriptlang.org/tsconfig/#Projects_6255: *
+		"composite": true,
+		// https://www.typescriptlang.org/tsconfig/#Language_and_Environment_6254: * except (jsx*, lib, target)
+		// implied in v6: "libReplacement": false,
+		// implied when module=nodenext: "target":"esnext",
+		"moduleDetection": "force",
+		// implied when target>=es2022: "useDefineForClassFields": true,
+		// https://www.typescriptlang.org/tsconfig/#Modules_6244
+		// implied when composite=true: "declaration": true,
+		"module": "nodenext",
+		// implied in v6: "noUncheckedSideEffectImports": true,
+		// implied in v6: "rootDir": ".",
+		// implied in v6: "types": [],
+		// https://www.typescriptlang.org/tsconfig/#Type_Checking_6248 (*)
+		// implied in v6: "strict": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		// https://www.typescriptlang.org/tsconfig/#Emit_6246
+		"declarationMap": true,
+		"noEmit": true,
+		"outDir": "${configDir}/node_modules/.cache/tsc/outDir",
+		"sourceMap": true,
+		// https://www.typescriptlang.org/tsconfig/#Interop_Constraints_6252: * except (esModuleInterop)
+		"isolatedDeclarations": true,
+		// implied when verbatimModuleSyntax=true: "isolatedModules": true,
+		"verbatimModuleSyntax": true,
+		"erasableSyntaxOnly": true,
+	},
+	// https://www.typescriptlang.org/tsconfig/#quick-nav-Top%20Level
+	"files": [],
+}

@@ -1,0 +1,10 @@
+{
+	"name": "@mestriga-org/eslint-config",
+	"type": "module",
+	"private": true,
+	"exports": "./tsconfig.json",
+	"sideEffects": false,
+	"files": [
+		"tsconfig.json"
+	]
+}
