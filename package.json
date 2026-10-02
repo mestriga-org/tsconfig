@@ -1,6 +1,5 @@
 {
 	"name": "@mestriga-org/tsconfig",
-	"type": "module",
 	"private": true,
 	"sideEffects": false,
 	"exports": "./tsconfig.json",
