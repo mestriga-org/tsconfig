@@ -4,10 +4,3 @@ indent_style = tab
 
 [*.json]
 indent_size = 2
-
-[*.y{aml,ml}]
-indent_size = 2
-indent_style = space
-
-[/pnpm-{lock,workspace}.yaml]
-end_of_line = lf
