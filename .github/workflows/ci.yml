@@ -1,0 +1,11 @@
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+permissions: { }
+jobs:
+  git-check:
+    permissions:
+      contents: read
+    uses: mestriga-org/public-workflows/.github/workflows/git-check.yml@main
