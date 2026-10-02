@@ -1,5 +1,5 @@
 {
-	"name": "@mestriga-org/eslint-config",
+	"name": "@mestriga-org/tsconfig",
 	"type": "module",
 	"private": true,
 	"exports": "./tsconfig.json",
