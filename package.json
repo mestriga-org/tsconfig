@@ -3,7 +3,5 @@
 	"private": true,
 	"sideEffects": false,
 	"exports": "./tsconfig.json",
-	"files": [
-		"tsconfig.json"
-	]
+	"files": ["tsconfig.json"]
 }
