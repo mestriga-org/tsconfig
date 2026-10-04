@@ -9,3 +9,5 @@
 
 *.yaml  text whitespace=tabwidth=2,tab-in-indent
 *.yml   text whitespace=tabwidth=2,tab-in-indent
+
+.github/workflows/actions.lock text whitespace=tabwidth=2,tab-in-indent eol=lf
