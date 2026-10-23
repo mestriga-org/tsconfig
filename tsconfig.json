@@ -41,7 +41,7 @@ To be overriden:
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		// https://www.typescriptlang.org/tsconfig/#Emit_6246
-		"declarationMap": true,
+		// "declarationMap": true,
 		"noEmit": true,
 		"outDir": "${configDir}/node_modules/.cache/tsc/outDir",
 		"sourceMap": true,
